@@ -86,3 +86,8 @@ Route::get('user/password', [
 Route::post('user/updatepassword', [
 		'uses'	=>	'UserController@updatePassword',
 		'as'	=>	'users.update.password']);
+
+//Consumir API Riot Games
+Route::get('summoner', [
+		'uses'	=>	'SummonerController@getAll',
+		'as'	=>	'summoners.getAll']);
